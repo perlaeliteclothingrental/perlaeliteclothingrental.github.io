@@ -1,17 +1,797 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Perla Elite</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Perla Elite | Cho Thuê & Bán Váy Thiết Kế Dạ Hội, Tốt Nghiệp, Áo Dài Hà Nội</title>
+  <meta name="description" content="Perla Elite - Elevate your elegance. Cho thuê và may bán váy thiết kế dạ hội, váy tốt nghiệp kỷ yếu, áo dài cách tân cao cấp tại Hà Nội. Hơn 500+ mẫu váy độc bản, miễn phí fitting theo số đo, giặt hấp chuẩn 5 sao." />
+  <meta name="keywords" content="Perla Elite, thuê váy thiết kế hà nội, thuê váy dạ hội, thuê váy tốt nghiệp, thuê áo dài cách tân, váy prom hà nội, thuê đồ 850 láng" />
+  <meta name="author" content="Perla Elite" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- OpenGraph & Social Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Perla Elite | Cho Thuê & Bán Váy Thiết Kế Dạ Hội, Tốt Nghiệp, Áo Dài Hà Nội" />
+  <meta property="og:description" content="Elevate your elegance. Khẳng định phong cách & vẻ đẹp quý phái cùng bộ sưu tập váy thiết kế độc bản tại Perla Elite. Miễn phí fitting theo số đo, dịch vụ chuyên nghiệp." />
+  <meta property="og:image" content="assets/images/hero_banner.jpg" />
+  <meta property="og:url" content="https://perlaeliteclothingrental.github.io/" />
+  <meta property="og:locale" content="vi_VN" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+
+  <!-- Stylesheets & Fonts -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Perla Elite",
+    "image": "https://perlaeliteclothingrental.github.io/assets/images/hero_banner.jpg",
+    "logo": "https://perlaeliteclothingrental.github.io/assets/logo.png",
+    "description": "Cho thuê & may bán váy Thiết kế dạ hội, váy Tốt nghiệp / Prom, Áo dài cách tân cao cấp tại Hà Nội.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Số 12 ngách 2, ngõ 850 Đường Láng",
+      "addressLocality": "Đống Đa",
+      "addressRegion": "Hà Nội",
+      "addressCountry": "VN"
+    },
+    "telephone": "+84812371611",
+    "openingHours": "Mo-Su 08:00-21:00",
+    "priceRange": "120.000đ - 800.000đ",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61592329033629",
+      "https://www.instagram.com/perla.elite.hn/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-    <h1>Welcome to Perla Elite</h1>
-    <p>This is a simple paragraph of text on my new HTML page.</p>
-    
-    <!-- This is a link that opens in a new tab -->
-    <a href="https://google.com" target="_blank">Visit Google</a>
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar">
+    <span>✨ Ưu đãi đặc biệt: Giảm ngay 15% cho nhóm thuê kỷ yếu & tặng mượn phụ kiện dạ hội cao cấp | Hotline: <strong>081.237.1611</strong></span>
+    <a href="#bo-suu-tap">Xem Ngay</a>
+  </aside>
 
+  <!-- Main Navigation Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Menu chính">
+        <!-- Brand Identity -->
+        <a href="#" class="brand-logo-wrap" title="Perla Elite - Trang chủ">
+          <img src="assets/logo.png" alt="Logo Thiên Nga Perla Elite" class="brand-logo-img" width="52" height="52" />
+          <div class="brand-name-text">
+            <span class="brand-title">PERLA ELITE</span>
+            <span class="brand-tagline">Elevate your elegance</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#ve-chung-toi" class="nav-link">Về Perla Elite</a></li>
+          <li><a href="#bo-suu-tap" class="nav-link">Bộ Sưu Tập</a></li>
+          <li><a href="#uu-the" class="nav-link">Ưu Thế Vàng</a></li>
+          <li><a href="#quy-trinh" class="nav-link">Quy Trình Thuê</a></li>
+          <li><a href="#bang-gia" class="nav-link">Bảng Giá</a></li>
+          <li><a href="#feedback" class="nav-link">Nàng Thơ</a></li>
+          <li><a href="#showroom" class="nav-link">Showroom</a></li>
+        </ul>
+
+        <!-- Action Items -->
+        <div class="nav-actions">
+          <a href="tel:0812371611" class="nav-hotline" title="Gọi hotline">
+            <i class="fas fa-phone-alt"></i>
+            <span>081.237.1611</span>
+          </a>
+          <a href="#dat-lich" class="btn btn-primary btn-sm">
+            <i class="fas fa-calendar-alt"></i> Đặt Lịch Thử
+          </a>
+          <button class="mobile-toggle" aria-label="Mở menu di động">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <div class="brand-logo-wrap">
+          <img src="assets/logo.png" alt="Logo Perla Elite" width="42" height="42" class="brand-logo-img" />
+          <div class="brand-name-text">
+            <span class="brand-title" style="font-size: 1.15rem;">PERLA ELITE</span>
+            <span class="brand-tagline" style="font-size: 1.05rem;">Elevate your elegance</span>
+          </div>
+        </div>
+        <button class="drawer-close" aria-label="Đóng menu"><i class="fas fa-times"></i></button>
+      </div>
+      <nav class="drawer-links">
+        <a href="#ve-chung-toi" class="drawer-link"><i class="fas fa-feather-alt text-rose"></i> Về Perla Elite</a>
+        <a href="#bo-suu-tap" class="drawer-link"><i class="fas fa-gem text-rose"></i> Bộ Sưu Tập Thiết Kế</a>
+        <a href="#uu-the" class="drawer-link"><i class="fas fa-award text-rose"></i> Ưu Thế & Cam Kết</a>
+        <a href="#quy-trinh" class="drawer-link"><i class="fas fa-sync-alt text-rose"></i> Quy Trình Thuê Váy</a>
+        <a href="#bang-gia" class="drawer-link"><i class="fas fa-tags text-rose"></i> Bảng Giá & Điều Khoản</a>
+        <a href="#feedback" class="drawer-link"><i class="fas fa-heart text-rose"></i> Khách Hàng Review</a>
+        <a href="#showroom" class="drawer-link"><i class="fas fa-map-marker-alt text-rose"></i> Showroom 850 Láng</a>
+      </nav>
+    </div>
+    <div>
+      <a href="#dat-lich" class="btn btn-primary" style="width: 100%; margin-bottom: 12px;">
+        <i class="fas fa-calendar-check"></i> Đặt Lịch Thử Đồ Ngay
+      </a>
+      <div style="font-size: 0.85rem; text-align: center; color: var(--text-muted);">
+        Hotline: 081.237.1611 • 037.878.1155
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-accent"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>Bộ Sưu Tập Dạ Hội & Kỷ Yếu 2026 Mới Nhất</span>
+          </div>
+          <h1 class="hero-title">
+            Nâng Tầm Nhan Sắc & Tỏa Sáng Lộng Lẫy
+            <span class="hero-tagline">Elevate your elegance</span>
+          </h1>
+          <p class="hero-desc">
+            Chào mừng bạn đến với <strong>Perla Elite</strong> — thương hiệu cho thuê và may bán váy thiết kế dạ hội, váy tốt nghiệp kỷ yếu và áo dài cao cấp hàng đầu tại Hà Nội. Từng đường kim mũi chỉ được đo ni đóng giày giúp nàng tự tin tỏa sáng rực rỡ nhất trong mọi sự kiện.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#bo-suu-tap" class="btn btn-primary">
+              <i class="fas fa-sparkles"></i> Khám Phá Bộ Sưu Tập
+            </a>
+            <a href="#dat-lich" class="btn btn-secondary">
+              <i class="fas fa-calendar-alt"></i> Đặt Lịch Thử Váy
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">500<span>+</span></span>
+              <span class="stat-label">Mẫu Váy Độc Quyền</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0<span>đ</span></span>
+              <span class="stat-label">Miễn Phí Chỉnh Fitting</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100<span>%</span></span>
+              <span class="stat-label">Giặt Hấp Chuẩn Spa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-card">
+            <img src="assets/images/hero_banner.jpg" alt="Váy dạ hội thiết kế cao cấp Perla Elite" width="800" height="540" />
+          </div>
+          <div class="hero-floating-badge">
+            <div class="floating-icon">
+              <i class="fas fa-cut"></i>
+            </div>
+            <div>
+              <div class="floating-text-title">Fitting Theo Số Đo</div>
+              <div class="floating-text-sub">Chỉnh sửa vừa khít eo & dáng hoàn toàn miễn phí</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Brand Concept Section -->
+  <section class="section section-alt" id="ve-chung-toi">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-media">
+          <div class="story-img-main">
+            <img src="assets/images/showroom.jpg" alt="Không gian showroom Perla Elite 850 Láng" width="600" height="460" />
+          </div>
+          <div class="story-badge-logo">
+            <img src="assets/logo.png" alt="Biểu tượng Thiên Nga Vương Miện Perla Elite" />
+          </div>
+        </div>
+        <div class="story-content">
+          <span class="section-sub">Câu Chuyện Thương Hiệu</span>
+          <h2 class="section-title">Biểu Tượng Thiên Nga Vương Giả & Vẻ Đẹp Thuần Khiết</h2>
+          <p>
+            Lấy cảm hứng từ loài <strong>thiên nga kiêu sa</strong> đội vương miện trên logo vàng hồng, <strong>Perla Elite</strong> ra đời với sứ mệnh tôn vinh nét đẹp quý phái, thanh lịch và sự tự tin của mỗi cô gái.
+          </p>
+          <p>
+            Dù nàng chuẩn bị bước lên thảm đỏ dạ tiệc, dự lễ tốt nghiệp đánh dấu cột mốc thanh xuân, hay khoác lên mình tà áo dài thướt tha giữa lòng Hà Nội — Perla Elite luôn có một thiết kế độc bản dành riêng cho nàng.
+          </p>
+          <div class="story-features">
+            <div class="story-feature-item">
+              <div class="story-feature-icon"><i class="fas fa-check"></i></div>
+              <span>Chất liệu vải cao cấp nhập khẩu</span>
+            </div>
+            <div class="story-feature-item">
+              <div class="story-feature-icon"><i class="fas fa-check"></i></div>
+              <span>Form váy siết eo hack dáng thần thánh</span>
+            </div>
+            <div class="story-feature-item">
+              <div class="story-feature-icon"><i class="fas fa-check"></i></div>
+              <span>Phụ kiện đi kèm đồng bộ sang trọng</span>
+            </div>
+            <div class="story-feature-item">
+              <div class="story-feature-icon"><i class="fas fa-check"></i></div>
+              <span>Tư vấn stylist 1:1 tận tâm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Catalog Section -->
+  <section class="section" id="bo-suu-tap">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">Curated Lookbook</span>
+        <h2 class="section-title">Bộ Sưu Tập Nổi Bật Dành Riêng Cho Nàng</h2>
+        <p class="section-desc">
+          Khám phá những thiết kế dạ hội lộng lẫy, váy tốt nghiệp thanh tân, áo dài cách tân nàng thơ và phụ kiện hoàn thiện diện mạo kiêu kỳ.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Tất Cả Mẫu Váy</button>
+        <button class="filter-btn" data-filter="gala">Váy Thiết Kế Dạ Hội</button>
+        <button class="filter-btn" data-filter="prom">Váy Tốt Nghiệp & Prom</button>
+        <button class="filter-btn" data-filter="aodai">Áo Dài Nàng Thơ</button>
+        <button class="filter-btn" data-filter="accessories">Phụ Kiện Cao Cấp</button>
+      </div>
+
+      <!-- Dynamic Products Grid -->
+      <div class="product-grid" id="product-grid">
+        <!-- Rendered by script.js with rich product cards -->
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">
+          Còn hơn <strong>500+ mẫu váy mới</strong> liên tục cập nhật tại showroom 850 Láng và Instagram <strong>@perla.elite.hn</strong>
+        </p>
+        <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+          <a href="https://www.instagram.com/perla.elite.hn/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fab fa-instagram"></i> Xem Thêm Trên Instagram
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61592329033629&locale=vi_VN" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fab fa-facebook"></i> Nhắn Tin Qua Fanpage
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us / Value Proposition -->
+  <section class="section section-alt" id="uu-the">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">Dịch Vụ Đẳng Cấp</span>
+        <h2 class="section-title">4 Cam Kết Vàng Chỉ Có Tại Perla Elite</h2>
+        <p class="section-desc">
+          Chúng tôi hiểu rằng mỗi sự kiện đều là kỷ niệm thiêng liêng. Vì vậy, Perla Elite chăm chút tỉ mỉ từ trang phục đến trải nghiệm thử đồ của bạn.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-crown"></i>
+          </div>
+          <h3 class="feature-title">Thiết Kế Độc Bản</h3>
+          <p class="feature-desc">
+            Tuyển tập mẫu váy thiết kế độc quyền, cập nhật liên tục theo xu hướng thời trang quốc tế, không lo đụng hàng khi xuất hiện tại sự kiện.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-tape"></i>
+          </div>
+          <h3 class="feature-title">Miễn Phí Chỉnh Fitting</h3>
+          <p class="feature-desc">
+            Đội ngũ thợ may tay nghề cao trực tiếp chỉnh sửa ngực, eo, tà váy theo đúng số đo 3 vòng của bạn hoàn toàn miễn phí, tôn dáng tối đa.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-spa"></i>
+          </div>
+          <h3 class="feature-title">Giặt Hấp Chuẩn 5 Sao</h3>
+          <p class="feature-desc">
+            100% trang phục được giặt hấp sinh học, khử khuẩn nhiệt và xông hương thơm nhẹ nhàng trước khi đóng túi chuyên dụng giao đến tay nàng.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+          <h3 class="feature-title">Giao Nhận Linh Hoạt</h3>
+          <p class="feature-desc">
+            Hỗ trợ ship thử đồ tận nơi nội thành Hà Nội, thời gian thuê linh hoạt từ 3 - 4 ngày để bạn thảnh thơi chuẩn bị cho ngày trọng đại.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-Step Rental Process -->
+  <section class="section" id="quy-trinh">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">Đơn Giản & Thảnh Thơi</span>
+        <h2 class="section-title">Quy Trình Thuê Váy 4 Bước Tiện Lợi</h2>
+        <p class="section-desc">
+          Chỉ mất vài phút để chọn lựa và đặt giữ mẫu váy yêu thích mà không phải lo lắng về thủ tục rườm rà.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Chọn Mẫu & Giữ Chỗ</h3>
+          <p class="step-desc">Xem lookbook online hoặc ghé Showroom 850 Láng để chọn mẫu ưng ý và đặt cọc giữ ngày bạn cần mặc.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Fitting Theo Dáng</h3>
+          <p class="step-desc">Đến thử trực tiếp hoặc gửi số đo. Thợ may Perla Elite sẽ chỉnh sửa vừa khít từng centimet cơ thể nàng.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Nhận Váy & Tỏa Sáng</h3>
+          <p class="step-desc">Nhận váy được là ủi phẳng phiu, thơm phức trong túi chuyên dụng, kèm phụ kiện sẵn sàng cho buổi tiệc.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3 class="step-title">Hoàn Trả Nhẹ Nhàng</h3>
+          <p class="step-desc">Sau sự kiện, bạn chỉ cần gửi trả váy (không cần giặt). Perla Elite kiểm tra và hoàn trả cọc ngay lập tức.</p>
+        </div>
+      </div>
+
+      <!-- Pricing & Policy Info Box -->
+      <div class="pricing-policy-wrap" id="bang-gia">
+        <div class="pricing-col">
+          <h3><i class="fas fa-tag text-rose"></i> Bảng Giá & Thời Gian Thuê</h3>
+          <ul class="pricing-list">
+            <li class="pricing-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Thời gian thuê tiêu chuẩn:</strong> 3 ngày 2 đêm (Nhận đồ hôm trước, diện hôm nay, trả đồ hôm sau).</div>
+            </li>
+            <li class="pricing-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Váy Tốt Nghiệp & Kỷ Yếu:</strong> Dao động từ <strong>250.000đ – 450.000đ</strong> / lượt.</div>
+            </li>
+            <li class="pricing-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Áo Dài Cách Tân & Nàng Thơ:</strong> Dao động từ <strong>300.000đ – 450.000đ</strong> / lượt.</div>
+            </li>
+            <li class="pricing-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Váy Thiết Kế Dạ Hội & Prom:</strong> Dao động từ <strong>450.000đ – 750.000đ</strong> / lượt.</div>
+            </li>
+            <li class="pricing-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Ưu đãi nhóm kỷ yếu:</strong> Giảm 10 - 20% khi thuê từ 3 bộ trở lên.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="policy-col">
+          <h3><i class="fas fa-shield-alt text-rose"></i> Chính Sách Cọc & Bảo Quản</h3>
+          <ul class="policy-list">
+            <li class="policy-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Hình thức cọc linh hoạt:</strong> Khách hàng có thể để lại CCCD gắn chip gốc HOẶC đặt tiền cọc tương ứng giá trị sản phẩm.</div>
+            </li>
+            <li class="policy-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Không cần giặt đồ:</strong> Quý khách chỉ cần treo gọn gàng gửi lại, Perla Elite tự xử lý giặt hấp chuyên sâu.</div>
+            </li>
+            <li class="policy-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Hỗ trợ giữ váy:</strong> Khách hàng đặt cọc trước sẽ được bảo lưu ngày giữ mẫu 100%, không lo trùng đồ.</div>
+            </li>
+            <li class="policy-item">
+              <i class="fas fa-check-circle item-check"></i>
+              <div><strong>Bảo đảm đồ nguyên vẹn:</strong> Hạn chế xịt nước hoa trực tiếp lên chi tiết đính kết kim sa hoặc trang sức dễ xước.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Feedbacks & Lookbook Wall -->
+  <section class="section section-alt" id="feedback">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">Những Khoảnh Khắc Tỏa Sáng</span>
+        <h2 class="section-title">Nàng Thơ Của Perla Elite</h2>
+        <p class="section-desc">
+          Mỗi bức ảnh, mỗi lời chia sẻ từ khách hàng chính là niềm tự hào và động lực to lớn nhất của đội ngũ Perla Elite.
+        </p>
+      </div>
+
+      <div class="feedback-grid">
+        <div class="feedback-card">
+          <div class="feedback-photo">
+            <img src="assets/images/feedback_1.jpg" alt="Khách hàng dự tiệc sinh nhật tỏa sáng với váy Perla Elite" loading="lazy" />
+          </div>
+          <div class="feedback-body">
+            <div class="feedback-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="feedback-quote">
+              "Váy kim sa vàng hồng bên ngoài đẹp hơn ảnh gấp bội! Form váy siết eo cực chuẩn, đi tiệc ai cũng khen lộng lẫy như công chúa. Thợ may chỉnh lại eo cho mình vừa như may đo vậy. Rất hài lòng!"
+            </p>
+            <div class="feedback-author">
+              <span class="author-name">Khánh Linh</span>
+              <span class="author-event">Gala Dinner & Sinh Nhật</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-card">
+          <div class="feedback-photo">
+            <img src="assets/images/feedback_2.jpg" alt="Khách hàng rạng ngời trong ngày lễ tốt nghiệp ĐHQG Hà Nội" loading="lazy" />
+          </div>
+          <div class="feedback-body">
+            <div class="feedback-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="feedback-quote">
+              "Mình thuê mẫu váy trắng tay bồng cho ngày nhận bằng tốt nghiệp tại ĐHQGHN. Váy thơm phức, chất vải đứng form chụp ảnh siêu ăn hình. Các bạn nhân viên tư vấn nhiệt tình và chu đáo vô cùng!"
+            </p>
+            <div class="feedback-author">
+              <span class="author-name">Phương Thảo</span>
+              <span class="author-event">Lễ Tốt Nghiệp Đại Học</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-card">
+          <div class="feedback-photo">
+            <img src="assets/images/feedback_3.jpg" alt="Khách hàng diện áo dài cách tân thêu hoa chụp ảnh phố cổ" loading="lazy" />
+          </div>
+          <div class="feedback-body">
+            <div class="feedback-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="feedback-quote">
+              "Tà áo dài thêu hoa hồng phấn của shop mặc lên dịu dàng nàng thơ lắm luôn. Mình đi chụp ảnh ở Văn Miếu mà bao nhiêu bạn hỏi thuê ở đâu. Giá thuê lại rất hợp lý cho học sinh - sinh viên nữa."
+            </p>
+            <div class="feedback-author">
+              <span class="author-name">Hải Yến</span>
+              <span class="author-event">Chụp Ảnh Nghệ Thuật</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Section -->
+  <section class="section booking-section" id="dat-lich">
+    <div class="container">
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <div>
+            <span class="section-sub" style="color: var(--rose-gold-light);">Trải Nghiệm Trực Tiếp</span>
+            <h3 style="color: #FFF;">Đặt Lịch Thử Váy & Tư Vấn Stylist</h3>
+            <p>
+              Hãy để Perla Elite đón tiếp bạn tại không gian boutique ấm cúng, sang trọng. Chuyên viên stylist sẽ cùng bạn chọn ra bộ trang phục tôn dáng và hoàn hảo nhất.
+            </p>
+          </div>
+
+          <div class="booking-contact-items">
+            <div class="b-contact-item">
+              <div class="b-contact-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div class="b-contact-detail">
+                <h4>Địa chỉ Showroom</h4>
+                <p>12 ngách 2, ngõ 850 Đường Láng, Hà Nội</p>
+              </div>
+            </div>
+            <div class="b-contact-item">
+              <div class="b-contact-icon"><i class="fas fa-clock"></i></div>
+              <div class="b-contact-detail">
+                <h4>Giờ Mở Cửa</h4>
+                <p>08:00 – 21:00 (Thứ 2 – Chủ Nhật)</p>
+              </div>
+            </div>
+            <div class="b-contact-item">
+              <div class="b-contact-icon"><i class="fas fa-phone-volume"></i></div>
+              <div class="b-contact-detail">
+                <h4>Hotline Tư Vấn Nhanh</h4>
+                <p>081.237.1611 • 037.878.1155</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px; font-size: 0.85rem; color: rgba(255, 255, 255, 0.6);">
+            * Hoàn toàn không mất phí thử đồ hay tư vấn phong cách.
+          </div>
+        </div>
+
+        <div class="booking-form-wrap">
+          <h3>Đăng Ký Lịch Hẹn</h3>
+          <p>Điền thông tin bên dưới, shop sẽ liên hệ xác nhận lịch thử đồ ngay trong 15 phút!</p>
+
+          <form id="booking-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="booking-name">Họ và Tên <span class="text-rose">*</span></label>
+                <input type="text" id="booking-name" class="form-control" placeholder="Ví dụ: Nguyễn Khánh Linh" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="booking-phone">Số Điện Thoại / Zalo <span class="text-rose">*</span></label>
+                <input type="tel" id="booking-phone" class="form-control" placeholder="Ví dụ: 0912 345 678" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="booking-date">Ngày Bạn Cần Trang Phục</label>
+                <input type="date" id="booking-date" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="booking-type">Dịp Sự Kiện / Mục Đích</label>
+                <select id="booking-type" class="form-control">
+                  <option value="Dạ Hội & Tiệc Sang Trọng">Váy Thiết Kế Dạ Hội / Gala</option>
+                  <option value="Lễ Tốt Nghiệp / Kỷ Yếu">Váy Tốt Nghiệp / Prom / Kỷ Yếu</option>
+                  <option value="Áo Dài Cách Tân / Nàng Thơ">Áo Dài Cách Tân / Lễ Tết</option>
+                  <option value="Tiệc Cưới / Phù Dâu">Dự Tiệc Cưới / Phù Dâu</option>
+                  <option value="Khác">Tư vấn phong cách khác</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label class="form-label" for="booking-method">Hình Thức Trải Nghiệm</label>
+                <select id="booking-method" class="form-control">
+                  <option value="Thử trực tiếp tại Showroom 850 Láng">Đến thử trực tiếp tại Showroom 850 Láng</option>
+                  <option value="Tư vấn Online & Ship thử tại nhà">Tư vấn Online & Ship thử tại nhà (Nội thành Hà Nội)</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label class="form-label" for="booking-note">Mẫu Váy Bạn Quan Tâm Hoặc Ghi Chú</label>
+                <textarea id="booking-note" class="form-control" placeholder="Nhập tên mẫu váy bạn thích hoặc số đo chiều cao/cân nặng để shop chuẩn bị trước size..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+              <i class="fas fa-paper-plane"></i> Gửi Đăng Ký & Mở Chat Tư Vấn Nhanh
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showroom Location & Map -->
+  <section class="section" id="showroom">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">Ghé Thăm Perla Elite</span>
+        <h2 class="section-title">Hệ Thống Showroom Tại Hà Nội</h2>
+        <p class="section-desc">
+          Không gian thử đồ rộng rãi, ánh sáng chuẩn studio với hàng trăm mẫu váy lộng lẫy đang chờ đón nàng ghé thăm.
+        </p>
+      </div>
+
+      <div class="showroom-wrapper">
+        <div class="showroom-info">
+          <div class="showroom-address-card">
+            <h4><i class="fas fa-store text-rose"></i> Showroom Đống Đa</h4>
+            <p><strong>Địa chỉ:</strong> Số 12 ngách 2, ngõ 850 Đường Láng, Láng Thượng, Đống Đa, Hà Nội</p>
+            <p><strong>Hotline / Zalo:</strong> <a href="tel:0812371611" class="text-rose font-weight-bold">081.237.1611</a> &amp; <a href="tel:0378781155" class="text-rose font-weight-bold">037.878.1155</a></p>
+            <div class="hours-badge">
+              <i class="far fa-clock"></i> Mở cửa đón khách: 08:00 – 21:00 hàng ngày
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="https://maps.google.com/?q=850+Đường+Láng+Hà+Nội" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm">
+                <i class="fas fa-directions"></i> Chỉ Đường Trên Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.316824141673!2d105.80164897587293!3d21.019904488077508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5e9df53597%3A0xe54e2fcf260655d8!2zODUwIMSQLiBMw6FuZywgTMOPeaceIFRoxrDhu6NuZywgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1710300000000!5m2!1sen!2s" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Bản đồ vị trí Perla Elite 850 Láng">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="Logo Perla Elite" width="48" height="48" />
+            <div>
+              <div class="footer-logo-title">PERLA ELITE</div>
+              <div class="footer-logo-sub">Elevate your elegance</div>
+            </div>
+          </div>
+          <p class="footer-about-text">
+            Thương hiệu cho thuê và bán váy thiết kế, váy tốt nghiệp kỷ yếu, áo dài cách tân cao cấp tại Hà Nội. Nâng niu vẻ đẹp quý phái và đồng hành cùng nàng trong mọi khoảnh khắc tỏa sáng.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/profile.php?id=61592329033629&locale=vi_VN" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook Page Perla Elite" title="Theo dõi Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/perla.elite.hn/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Perla Elite" title="Theo dõi Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://zalo.me/0812371611" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Zalo Perla Elite" title="Chat Zalo"><i class="fas fa-comment-dots"></i></a>
+            <a href="tel:0812371611" class="social-btn" aria-label="Gọi điện thoại" title="Gọi Hotline"><i class="fas fa-phone-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bộ Sưu Tập</h4>
+          <div class="footer-links">
+            <a href="#bo-suu-tap" class="footer-link">Váy Thiết Kế Dạ Hội</a>
+            <a href="#bo-suu-tap" class="footer-link">Váy Tốt Nghiệp & Prom</a>
+            <a href="#bo-suu-tap" class="footer-link">Áo Dài Nàng Thơ</a>
+            <a href="#bo-suu-tap" class="footer-link">Phụ Kiện Đi Tiệc</a>
+            <a href="#bo-suu-tap" class="footer-link">BST Mới Nhất 2026</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hỗ Trợ & Chính Sách</h4>
+          <div class="footer-links">
+            <a href="#quy-trinh" class="footer-link">Quy Trình Thuê Đồ</a>
+            <a href="#bang-gia" class="footer-link">Chính Sách Đặt Cọc</a>
+            <a href="#uu-the" class="footer-link">Chính Sách Fitting Miễn Phí</a>
+            <a href="#bang-gia" class="footer-link">Chính Sách Giặt Hấp</a>
+            <a href="#dat-lich" class="footer-link">Đăng Ký Lịch Thử Váy</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Liên Hệ Showroom</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Số 12 ngách 2, ngõ 850 Đường Láng, Đống Đa, Hà Nội</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>Hotline: 081.237.1611 &bull; 037.878.1155</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Mở cửa: 08:00 – 21:00 (Tất cả các ngày trong tuần)</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram: @perla.elite.hn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Perla Elite - Luxury Clothing Rental & Boutique. All rights reserved.</div>
+        <div>Designed with elegance for Perla Elite Hanoi</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="product-modal" aria-hidden="true" role="dialog">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Đóng chi tiết"><i class="fas fa-times"></i></button>
+      <div class="modal-content-grid">
+        <div class="modal-product-img">
+          <img src="" id="modal-img" alt="" />
+        </div>
+        <div class="modal-product-info">
+          <span class="modal-category" id="modal-cat"></span>
+          <h3 class="modal-title" id="modal-title"></h3>
+          
+          <div class="modal-price-box">
+            <div>
+              <div class="price-label">Giá thuê trọn gói</div>
+              <div class="price-value" id="modal-rental-price"></div>
+            </div>
+            <div style="text-align: right;">
+              <div class="price-label">Giá may bán</div>
+              <div style="font-weight: 600; color: var(--text-dark);" id="modal-buy-price"></div>
+            </div>
+          </div>
+
+          <p class="modal-desc" id="modal-desc"></p>
+
+          <div class="modal-specs">
+            <div class="modal-spec-row">
+              <span style="color: var(--text-muted);">Chất liệu:</span>
+              <strong id="modal-fabric"></strong>
+            </div>
+            <div class="modal-spec-row">
+              <span style="color: var(--text-muted);">Kích cỡ sẵn có:</span>
+              <strong id="modal-sizes"></strong>
+            </div>
+            <div class="modal-spec-row">
+              <span style="color: var(--text-muted);">Chỉnh sửa dáng:</span>
+              <strong class="text-rose">Miễn phí theo số đo 3 vòng</strong>
+            </div>
+          </div>
+
+          <ul style="list-style: none; margin-bottom: 20px; font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px;" id="modal-features">
+          </ul>
+
+          <div class="modal-actions">
+            <button class="btn btn-primary" id="modal-book-btn" style="flex: 1;">
+              <i class="fas fa-calendar-check"></i> Đặt Thuê Mẫu Này
+            </button>
+            <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="modal-zalo-btn">
+              <i class="fas fa-comment-dots text-rose"></i> Chat Zalo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Speed Dial Widgets -->
+  <div class="floating-actions" aria-label="Kênh liên hệ nhanh">
+    <a href="https://zalo.me/0812371611" target="_blank" rel="noopener noreferrer" class="fab-btn fab-zalo" title="Chat Zalo">
+      <i class="fas fa-comment-dots"></i>
+      <span class="fab-tooltip">Chat Zalo 081.237.1611</span>
+    </a>
+    <a href="https://m.me/61592329033629" target="_blank" rel="noopener noreferrer" class="fab-btn fab-messenger" title="Nhắn tin Facebook">
+      <i class="fab fa-facebook-messenger"></i>
+      <span class="fab-tooltip">Nhắn tin Fanpage</span>
+    </a>
+    <a href="https://www.instagram.com/perla.elite.hn/" target="_blank" rel="noopener noreferrer" class="fab-btn fab-instagram" title="Instagram @perla.elite.hn">
+      <i class="fab fa-instagram"></i>
+      <span class="fab-tooltip">Instagram @perla.elite.hn</span>
+    </a>
+    <a href="tel:0812371611" class="fab-btn fab-phone" title="Gọi Hotline">
+      <i class="fas fa-phone-alt"></i>
+      <span class="fab-tooltip">Gọi Hotline 081.237.1611</span>
+    </a>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toast-msg" role="alert">
+    <i class="fas fa-check-circle toast-icon"></i>
+    <span class="toast-text"></span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>

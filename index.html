@@ -57,7 +57,8 @@
 
   <!-- Top Announcement Bar -->
   <aside class="announcement-bar">
-    <span>✨ Ưu đãi đặc biệt: Giảm ngay 15% cho nhóm thuê kỷ yếu & tặng mượn phụ kiện dạ hội cao cấp | Hotline: <strong>081.237.1611</strong></span>
+    <span class="announcement-desktop">✨ Ưu đãi đặc biệt: Giảm ngay 15% cho nhóm thuê kỷ yếu & tặng mượn phụ kiện dạ hội cao cấp | Hotline: <strong>081.237.1611</strong></span>
+    <span class="announcement-mobile">✨ Ưu đãi kỷ yếu: Giảm 15% & tặng mượn phụ kiện | Hotline: <strong>081.237.1611</strong></span>
     <a href="#bo-suu-tap">Xem Ngay</a>
   </aside>
 
@@ -92,7 +93,7 @@
             <span>081.237.1611</span>
           </a>
           <a href="#dat-lich" class="btn btn-primary btn-sm">
-            <i class="fas fa-calendar-alt"></i> Đặt Lịch Thử
+            <i class="fas fa-calendar-alt"></i> <span>Đặt Lịch Thử</span>
           </a>
           <button class="mobile-toggle" aria-label="Mở menu di động">
             <span></span>
@@ -584,8 +585,9 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
-              <i class="fas fa-paper-plane"></i> Gửi Đăng Ký & Mở Chat Tư Vấn Nhanh
+            <button type="submit" class="btn btn-primary btn-booking-submit">
+              <i class="fas fa-paper-plane"></i>
+              <span>Gửi Đăng Ký & Mở Chat Tư Vấn</span>
             </button>
           </form>
         </div>
@@ -765,7 +767,7 @@
     </div>
   </div>
 
-  <!-- Floating Speed Dial Widgets -->
+  <!-- Floating Speed Dial Widgets (Desktop) -->
   <div class="floating-actions" aria-label="Kênh liên hệ nhanh">
     <a href="https://zalo.me/0812371611" target="_blank" rel="noopener noreferrer" class="fab-btn fab-zalo" title="Chat Zalo">
       <i class="fas fa-comment-dots"></i>
@@ -784,6 +786,28 @@
       <span class="fab-tooltip">Gọi Hotline 081.237.1611</span>
     </a>
   </div>
+
+  <!-- Mobile Sticky Bottom Action Bar (Screens <= 768px) -->
+  <nav class="mobile-bottom-bar" aria-label="Thao tác nhanh trên di động">
+    <div class="mobile-bottom-grid">
+      <a href="tel:0812371611" class="m-bar-btn phone" title="Gọi Hotline">
+        <i class="fas fa-phone-alt"></i>
+        <span>Gọi Ngay</span>
+      </a>
+      <a href="https://zalo.me/0812371611" target="_blank" rel="noopener noreferrer" class="m-bar-btn zalo" title="Chat Zalo">
+        <i class="fas fa-comment-dots"></i>
+        <span>Zalo</span>
+      </a>
+      <a href="https://m.me/61592329033629" target="_blank" rel="noopener noreferrer" class="m-bar-btn mess" title="Nhắn tin Messenger">
+        <i class="fab fa-facebook-messenger"></i>
+        <span>Messenger</span>
+      </a>
+      <a href="#dat-lich" class="m-bar-btn m-bar-cta" title="Đặt Lịch Thử">
+        <i class="fas fa-calendar-check"></i>
+        <span>Đặt Lịch</span>
+      </a>
+    </div>
+  </nav>
 
   <!-- Toast Notification -->
   <div class="toast-msg" id="toast-msg" role="alert">

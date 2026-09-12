@@ -205,16 +205,16 @@ document.addEventListener('DOMContentLoaded', () => {
       card.setAttribute('data-id', p.id);
 
       card.innerHTML = `
-        <div class="product-image-wrap">
+        <div class="product-image-wrap" onclick="openProductModal('${p.id}')">
           <img src="${p.image}" alt="${p.name}" loading="lazy" />
           <span class="product-badge ${p.badge.includes('Hot') || p.badge.includes('Bestseller') ? 'hot' : ''}">${p.badge}</span>
-          <button class="product-quick-btn" onclick="openProductModal('${p.id}')">
+          <button class="product-quick-btn" onclick="openProductModal('${p.id}'); event.stopPropagation();">
             <i class="fas fa-eye"></i> Xem Chi Tiết
           </button>
         </div>
         <div class="product-info">
           <span class="product-category">${p.categoryName}</span>
-          <h4 class="product-name">${p.name}</h4>
+          <h4 class="product-name" onclick="openProductModal('${p.id}')">${p.name}</h4>
           <div class="product-details-pills">
             ${p.sizes.map(s => `<span class="pill">${s}</span>`).join('')}
           </div>
